@@ -737,6 +737,10 @@ position: relative;
     margin-bottom: 8px;
     }
 
+.modal-field-comment {
+    margin-bottom: 16px;
+}
+
 .modal-textarea {
 line-height: 1.17;
 letter-spacing: 0.04em;
