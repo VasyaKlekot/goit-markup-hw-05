@@ -618,15 +618,15 @@ position: absolute;
 }
 
 
-.modal-close:hover .modal-button-icons {
+.modal-close:hover .modal-button-icon {
     fill: #ffffff;
 }
 
-.modal-close:active .modal-button-icons {
+.modal-close:active .modal-button-icon {
     fill: #ffffff;
 }
 
-.modal-close:focus .modal-button-icons {
+.modal-close:focus .modal-button-icon {
     fill: #ffffff;
 }
 
@@ -717,12 +717,11 @@ position: relative;
 }
 
 .modal-label-link {
-    color: #8E8F99;
     font-size: 12px;
-    font-style: normal;
     line-height: 1.17;
-    letter-spacing: 0.04px;
-
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #8e8f99;
 }    
 
 .modal-label-link a {
@@ -757,4 +756,48 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .modal-checkbox {
     margin-bottom: 24px;
+}
+
+.checkbox-form {
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+}
+
+.privacy-policy {
+    display: inline-block;
+    text-decoration: underline;
+    color: #4d5ae5;
+}
+
+.form-button {
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    background-color: #4d5ae5;
+    color: #ffffff;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 16px 32px;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-button:hover {
+    background-color: #404bbf;
+}
+
+.form-button:focus {
+    background-color: #404bbf;
 }
