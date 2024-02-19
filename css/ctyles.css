@@ -759,13 +759,28 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox-form {
-    border: 1px solid rgba(46, 47, 66, 0.4);
+    height: 16px;
+    width: 16px;
     border-radius: 2px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: inline-flex;
     align-items: center;
     justify-content: center;
     fill: transparent;
+    margin-right: 8px;
+}
+
+.modal-checkbox input[type='checkbox']:checked+label .checkbox-form {
+    background-color: #404bbf;
+    border: none;
+    fill: #f4f4fd;
+}
+
+.modal-checkbox input[type='checkbox']:focus+label .checkbox-form {
+    border-color: #4d5ae5;
 }
 
 .privacy-policy {
