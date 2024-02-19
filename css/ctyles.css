@@ -618,7 +618,6 @@ position: absolute;
 }
 
 
-
 .modal-close:hover .modal-button-icons {
     fill: #ffffff;
 }
@@ -656,19 +655,6 @@ margin-bottom: 8px;
 
 }
 
-.modal-input-name {
-    width: 100%;
-    height: 58px;
-    border-radius: 4px;
-    padding-left: 38px ;
-    border: 1px solid #4D5AE5;
-    transition-duration: 250ms;
-    height: 40px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    outline: transparent;
-    background-color: transparent;
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    }
 
 
 .modal-input {
@@ -695,6 +681,21 @@ margin-bottom: 8px;
     transition-duration: 250ms;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.modal-input:focus,
+.modal-input:active {
+    border-color: #4d5ae5;
+}
+
+.modal-input:active+.modal-icon {
+    fill: #4d5ae5;
+}
+
+.modal-input:focus+.modal-icon {
+    fill: #4d5ae5;
+}
+
+
 .modal-input-wrap {
 position: relative;
 }
