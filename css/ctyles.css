@@ -588,7 +588,7 @@ position: absolute;
 }
 
 .modal-close {
-position: absolute;
+    position: absolute;
     top: 24px;
     right: 24px;
     width: 24px;
@@ -642,7 +642,7 @@ position: absolute;
 }
 
 .modal-field {
-margin-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .modal-label {
@@ -652,10 +652,7 @@ margin-bottom: 8px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     margin-bottom: 4px;
-
 }
-
-
 
 .modal-input {
     width: 100%;
@@ -761,7 +758,6 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .checkbox-form {
     height: 16px;
     width: 16px;
-    border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         border 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -771,6 +767,7 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     justify-content: center;
     fill: transparent;
     margin-right: 8px;
+    border-radius: 2px;
 }
 
 .modal-checkbox input[type='checkbox']:checked+label .checkbox-form {
@@ -829,6 +826,7 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     line-height: 1.5;
     margin-bottom: 16px;
     color: #ffffff;
+    margin-left: 80px;
 }
 
 .form-footer {
@@ -842,21 +840,28 @@ gap: 24px;
 }
 
 .input-email-footer {
-    width: 264px;
-    height: 40px;
-    border: 1px solid #ffffff;
-    background-color: transparent;
-    font-size: 12px;
-    line-height: 2;
-    letter-spacing: 0.04em;
-    padding-left: 16px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    color: #ffffff;
+height: 40px;
+width: 264px;
+font-size: 12px;
+line-height: 2;
+letter-spacing: 0.04em;
+font-size: 12px;
+padding-left: 16px;
+background-color: transparent;
+border: 1px solid #ffffff;
+box-shadow: 0px 4px 4px 0px #00000026;
+border-radius: 4px;
+color: #ffffff;
+margin-left: 80px;
 }
 
 .input-email-footer::placeholder {
     color: #ffffff;
+}
+
+.input-email-footer:active,
+.input-email-footer:focus {
+    outline: none;
 }
 
 .subscribe-submit-btn {
